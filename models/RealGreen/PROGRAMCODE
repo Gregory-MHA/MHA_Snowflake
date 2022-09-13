@@ -1,0 +1,17 @@
+{{ config(
+  target_database="MHA_DATA",
+  target_schema="RG",
+  materialized="table"
+  
+) }}
+
+SELECT "ANYBRANCH"
+      ,"AUTORENEW"
+      ,"AVAILABLE"
+      ,"DESCRIPTION"
+      ,"MAX"
+      ,"PROGRAMTYPE"
+      ,"PROGRAMCODE"
+      ,"PROGRAMDEFINITIONID"
+      ,"PROGRAMSPECIAL"
+FROM "FIVETRAN_DATABASE"."STAGE_DBO"."PROGRAMCODE"
