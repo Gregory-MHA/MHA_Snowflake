@@ -1,5 +1,4 @@
 {{ config(database="MHA_DATA") }}
-{{ config(schema="RG") }}
 
 SELECT "ADDRESSLINE1" 
       ,"ADDRESSLINE2"
