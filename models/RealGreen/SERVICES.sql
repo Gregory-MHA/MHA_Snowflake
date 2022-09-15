@@ -1,4 +1,5 @@
 {{ config(database="MHA_DATA") }}
+{{ config(materialized="table") }}
 
 WITH CTE AS (
 SELECT "ACTUALMANHOURS":: DEC(10,2) AS "ACTUALMANHOURS"

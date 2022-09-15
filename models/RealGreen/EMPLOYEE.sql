@@ -1,4 +1,5 @@
 {{ config(database="MHA_DATA") }}
+{{ config(materialized="table") }}
 
 SELECT "ACTIVE"
       ,"DATEOFHIRE"

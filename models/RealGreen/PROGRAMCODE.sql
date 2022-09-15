@@ -1,4 +1,5 @@
 {{ config(database="MHA_DATA") }}
+{{ config(materialized="table") }}
 
 SELECT "ANYBRANCH"
       ,"AUTORENEW"

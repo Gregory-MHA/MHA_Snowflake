@@ -1,4 +1,5 @@
 {{ config(database="MHA_DATA") }}
+{{ config(materialized="table") }}
 
 SELECT "_ROWINDEX" as "ROWID"
       ,"AREACODE"
